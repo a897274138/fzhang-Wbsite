@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+}
+.nav1{
+    list-style: none;
+    background-color: rgba(236, 234, 199, 0.8);
+    width: 92%;
+    overflow: hidden;
+    margin: 0px auto 10px;
+    border-radius: 10px;
+    border: 2px rgb(253, 210, 53) solid;
+}
+.nav1 li{
+    float: left;
+    display: inline;
+    width: 33.3%;
+}
+.nav1 li a{
+    width: 100%;
+    display: inline-block;/*允许在元素上设置宽度和高度*/
+    text-align: center;
+    padding: 1px 3px;
+    text-decoration: none;
+    color: rgb(242, 196, 11);
+    font-weight: bold;
+    font-family: "楷体";
+    font-size: 20px;
+}
+.nav1 a:hover{
+    background-color: rgba(221,221,211,1);
+}
+.nav2{
+    list-style: none;
+    background-color: rgb(200, 139, 100);
+    width: 92%;
+    overflow: hidden;
+    margin-left: 4%;
+}
+.nav2 li{
+    float: left;
+    display: inline;
+    width: 33.3%;
+}
+.nav2 li a{
+    width: 100%;
+    display: inline-block;/*允许在元素上设置宽度和高度*/
+    text-align: center;
+    padding: 1px 3px;
+    text-decoration: none;
+    color: rgb(242, 196, 11);
+    font-weight: bold;
+    font-family: "楷体";
+    font-size: 20px;
+}
+.nav2 a:hover{
+    background-color: rgb(143, 143, 139);
+}
+#Logo-Bottom{
+    background-color: #f1c490;
+    height: 100px;
+    width: 100%;
+}
+
+/*图片动画效果*/
+.pingyi1{
+    position: relative;animation:myfirst1 10s;-webkit-animation:myfirst1 10s;animation-iteration-count:infinite;
+}
+@keyframes myfirst1
+{
+	0%   { left:0px; bottom:2000px;}
+	100% { left:0px; bottom:0px;}
+}
+
+@-webkit-keyframes myfirst1 /* 支持Safari and Chrome */
+{
+	0%   { left:0px; bottom:2000px;}
+	100% { left:0px; bottom:0px;}
+}

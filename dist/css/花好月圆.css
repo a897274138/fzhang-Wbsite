@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+}
+.nav1{
+    list-style: none;
+    background-color: rgba(236, 234, 199, 0.8);
+    width: 92%;
+    overflow: hidden;
+    margin: 0px auto 10px;
+    border-radius: 10px;
+    border: 2px rgb(253, 210, 53) solid;
+}
+.nav1 li{
+    float: left;
+    display: inline;
+    width: 33.3%;
+}
+.nav1 li a{
+    width: 100%;
+    display: inline-block;/*允许在元素上设置宽度和高度*/
+    text-align: center;
+    padding: 1px 3px;
+    text-decoration: none;
+    color: rgb(242, 196, 11);
+    font-weight: bold;
+    font-family: "楷体";
+    font-size: 20px;
+}
+.nav1 a:hover{
+    background-color: rgba(221,221,211,1);
+}
+
+#fashion ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#fashion ul li {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#fashion ul li div {
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: scale(1.2);
+    transition: all 0.5s;
+    opacity: 0;
+}
+#fashion ul li:hover div {
+    transform: scale(1);
+    opacity: 1;
+}
+#fashion ul li img {
+    transform: scale(1);
+    transition: all 0.5s;
+}
+#fashion ul li:hover img {
+    transform: scale(1.2);
+}
+#fashion div p{
+    font-size: 21px;
+    text-align: center;
+    margin: 5px 0 10px;
+}
+
+#daoyubj{
+    width: 92%;
+    margin-left: 4%;
+    height: auto;
+    border: 5px #ffaa48 solid;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.nav2{
+    list-style: none;
+    background-color: rgb(200, 139, 100);
+    width: 92%;
+    overflow: hidden;
+    margin-left: 4%;
+}
+.nav2 li{
+    float: left;
+    display: inline;
+    width: 33.3%;
+}
+.nav2 li a{
+    width: 100%;
+    display: inline-block;/*允许在元素上设置宽度和高度*/
+    text-align: center;
+    padding: 1px 3px;
+    text-decoration: none;
+    color: rgb(242, 196, 11);
+    font-weight: bold;
+    font-family: "楷体";
+    font-size: 20px;
+}
+.nav2 a:hover{
+    background-color: rgb(143, 143, 139);
+}
+#Logo-Bottom{
+    background-color: #f1c490;
+    height: 100px;
+    width: 100%;
+}
+
+/*图片动画效果*/
+.pingyi1{
+    position: relative;animation:myfirst1 5s;-webkit-animation:myfirst1 5s;animation-iteration-count:1;
+}
+@keyframes myfirst1
+{
+	0%   { left:220px; bottom:0px;}
+	100% { left:0px; bottom:0px;}
+}
+
+@-webkit-keyframes myfirst1 /* Safari and Chrome */
+{
+	0%   { left:220px; bottom:0px;}
+	100% { left:0px; bottom:0px;}
+}
+
+.pingyi2{
+    position: relative;animation:myfirst2 5s;-webkit-animation:myfirst2 5s;animation-iteration-count:1;
+}
+@keyframes myfirst2
+{
+	0%   { right:220px; bottom:0px;}
+	100% { right:0px; bottom:0px;}
+}
+
+@-webkit-keyframes myfirst2 /* Safari and Chrome */
+{
+	0%   { right:220px; bottom:0px;}
+	100% { right:0px; bottom:0px;}
+}
